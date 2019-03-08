@@ -9,4 +9,3 @@ export interface PageInfo {
     tumblr?: string;
     team?: any[];
 }
-

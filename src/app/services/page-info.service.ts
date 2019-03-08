@@ -23,7 +23,7 @@ export class PageInfoService {
                this.info = resp;
                this.loaded = true;
 
-               console.log( resp );
+               // console.log( resp );
              });
   }
 
@@ -32,7 +32,7 @@ export class PageInfoService {
              .subscribe( (resp: any) => {
                this.team = resp;
 
-               console.log( resp );
+               // console.log( resp );
              });
   }
 }
