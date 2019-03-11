@@ -28,4 +28,8 @@ export class ProductsService {
           // console.log(resp);
         });
   }
+
+  getProduct( id: string) {
+    return this.http.get( `https://angular-html-efe8c.firebaseio.com/products/${ id }.json` );
+  }
 }
