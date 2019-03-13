@@ -1,5 +1,6 @@
 export interface PageInfo {
-    titulo?: string;
+    title?: string;
+    title_sub?: string;
     email?: string;
     short_name?: string;
     author_page?: string;
