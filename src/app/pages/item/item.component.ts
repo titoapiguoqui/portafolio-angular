@@ -9,6 +9,8 @@ import { ProductDetails } from '../../interfaces/product-details.interface';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
+  product: ProductDetails;
+  id; string;
 
   constructor( private route: ActivatedRoute, public productService: ProductsService ) { }
 
@@ -17,7 +19,9 @@ export class ItemComponent implements OnInit {
         .subscribe( params => {
           this.productService.getProduct(params.id)
               .subscribe ( (product: ProductDetails) => {
-                console.log(product);
+                this.id = params.id;
+                this.product = product;
+                // console.log(product);
               });
 
           // console.log(params.id);
